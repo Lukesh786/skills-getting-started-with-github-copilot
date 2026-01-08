@@ -101,18 +101,38 @@ section h3 {
 
 /* Bulleted list styling */
 .participants-list {
-  margin: 6px 0 0 18px;
+  margin: 6px 0 0 0;
   padding: 0;
   max-height: 120px;
   overflow-y: auto;
-  list-style: disc;
+  list-style: none;
 }
 
-.participants-list li {
-  padding: 3px 0;
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 6px;
   font-size: 0.9rem;
   color: #254055;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+}
+
+.delete-btn {
   background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.06);
 }
 
 /* Friendly "no participants" note */
